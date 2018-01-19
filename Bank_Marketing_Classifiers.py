@@ -54,9 +54,7 @@ df['n_campaign'] = pd.cut(df['campaign'], [0,1,2,4,6,8,10,15,20,40,100],labels=[
 categorical_data=df[['n_campaign','n_balance','n_age','job','marital','education','default','housing','loan','contact','month','y']]
 
 binary_data=pd.get_dummies(df[['campaign','balance','age','job','marital','education','default','housing','loan','contact','month']])
-
 print("Binary Header:-----------------\n",list(binary_data))
-
 
 
 #Feature Importance:
